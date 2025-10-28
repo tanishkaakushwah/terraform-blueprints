@@ -1,6 +1,3 @@
-# terraform-blueprints
-🚀 Terraform projects and labs — practical implementations of IaC concepts using modules, functions, dynamic blocks, and map-based iterations.
-
 # Terraform Labs 🧩
 
 This repository contains a collection of **Terraform-based Infrastructure as Code (IaC) projects** — covering a wide range of use cases from foundational setups to advanced infrastructure design patterns.
@@ -67,7 +64,7 @@ terraform-labs/
 
 ## 👥 Contributors
 
-* [Your Name](https://github.com/tanishkakushwah)
+* [Tanishka Kushwah](https://github.com/tanishkaakushwah)
 ---
 like `k8s-practice` and `pipelines` — so your whole profile looks consistently professional (as a portfolio or “DevOps Projects Collection”)?
 
