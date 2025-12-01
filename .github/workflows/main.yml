@@ -1,0 +1,50 @@
+run-name: Microservice Infra Deployment
+name: Terraform Dev Deploy
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: microservices_infra/env/dev
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            microservices_infra
+
+      - name: Azure Login (OIDC)
+        uses: Azure/login@v2
+        with:
+          client-id: 29b5b410-5e74-4b95-a9e4-1d155855e944
+          tenant-id: c77566ed-d418-4a73-9140-4db6f3d115e6
+          subscription-id: c0748677-9808-4356-8816-dc8088c5bb59
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.6.6
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Validate
+        run: terraform validate
+
+      - name: Terraform Plan
+        run: terraform plan -out=tfplan
+
+      - name: Terraform Apply
+        run: terraform apply -auto-approve tfplan
+
+          
