@@ -1,0 +1,7 @@
+rg_name="blib_rg"
+rg_location = "West Europe"
+acr_name = "blibacr4829"
+aks_name= "blib_aks"
+dns= "blibaks1"
+sql_server_name= "blib-sqlserver"
+sql_db_name= "blib-db"
