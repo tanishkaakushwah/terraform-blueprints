@@ -1,5 +1,5 @@
 rg_name="blib_rg"
-rg_location = "West Europe"
+rg_location = "centralus"
 acr_name = "blibacr4829"
 aks_name= "blib_aks"
 dns= "blibaks1"
