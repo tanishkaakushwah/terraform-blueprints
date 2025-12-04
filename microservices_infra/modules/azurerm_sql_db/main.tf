@@ -11,7 +11,4 @@ resource "azurerm_mssql_database" "db" {
   max_size_gb  = 2
   sku_name     = "S0"
   enclave_type = "VBS"
-  lifecycle {
-    prevent_destroy = true
-  }
 }
