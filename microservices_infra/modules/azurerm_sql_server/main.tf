@@ -4,5 +4,5 @@ resource "azurerm_mssql_server" "server" {
   location                     = var.rg_location
   version                      = "12.0"
   administrator_login          = "tani"
-  administrator_login_password = "tani"
+  administrator_login_password = "Sql@Admin#8974"
 }
