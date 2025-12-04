@@ -26,9 +26,9 @@ jobs:
       - name: Azure Login (OIDC)
         uses: Azure/login@v2
         with:
-          client-id: 06480770-632f-43f7-8ffc-0910d963a7ed
-          tenant-id: c77566ed-d418-4a73-9140-4db6f3d115e6
-          subscription-id: c0748677-9808-4356-8816-dc8088c5bb59
+          client-id: 1f713f69-30b5-404a-9213-c85604ab921c
+          tenant-id: b511aa26-fbd4-46c6-bd77-c84dcc046ce1
+          subscription-id: 009fad33-c09c-4841-af38-57dd79870d40
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
